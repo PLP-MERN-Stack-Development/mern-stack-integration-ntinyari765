@@ -1,0 +1,46 @@
+:root {
+  --color-primary: #c8a2c8; /* lilac */
+  --color-bg: #faf8fb;
+  --color-text: #333;
+  --color-accent: #a27da2;
+  --border-radius: 12px;
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Buttons */
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: var(--color-primary);
+}
